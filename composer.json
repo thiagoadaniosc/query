@@ -6,6 +6,11 @@
             "email": "thiago@emsventura.com.br"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Src\\" : "Src"
+        }
+    },
     "require": {
         "twbs/bootstrap": "^4.3",
         "components/jquery": "^3.3"
