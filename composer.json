@@ -1,0 +1,13 @@
+{
+    "name": "root/query",
+    "authors": [
+        {
+            "name": "Thiago Adanio Scheidt",
+            "email": "thiago@emsventura.com.br"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^4.3",
+        "components/jquery": "^3.3"
+    }
+}
