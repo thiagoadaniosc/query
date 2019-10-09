@@ -6,13 +6,23 @@ use Src\Banco;
 
 $dataBases = $_REQUEST['databases'];
 $query = $_REQUEST['query'];
-
-var_dump($query, $dataBases);
+$retorno = [
+    'retorno' => false,
+    'mensagem' => 'Ocorreu um erro'
+];
 
 foreach ($dataBases as $database) {
     $banco = new Banco($database);
     $result = $banco->query($query);
-    while($rs = $result->fetch(PDO::FETCH_ASSOC)){
-        var_dump($rs);
+    if ($result) {
+        $retorno['retorno'] = true;
+        $retorno['mensagem'] = [];
+
+        while($rs = $result->fetch(PDO::FETCH_ASSOC)){
+            $retorno['mensagem'][] = $rs;
+        }
     }
 }
+
+header('Content-Type: application/json');
+echo json_encode($retorno);
