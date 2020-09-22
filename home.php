@@ -74,16 +74,13 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
     <script type="text/javascript">
         var sql = ace.edit("query");
         sql.session.setMode("ace/mode/mysql");
 
         $('#select-gestao').on('click', () => {
-            $("input[id^='opmes_']").prop( "checked", true );;
+            $("input[id^='opmes_']").prop( "checked", true );
         });
 
         $('.btn-executar').on('click', event => {
