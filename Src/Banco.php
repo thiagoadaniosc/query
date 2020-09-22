@@ -11,7 +11,7 @@ class Banco extends PDO
     public function __construct($dbname = DB_NAME)
     {
         $host = DB_HOST;
-        parent::__construct("mysql:host={$host};dbname={$dbname}", DB_USER, DB_PASSWORD);   
+        parent::__construct("mysql:host={$host};dbname={$dbname};charset=utf8", DB_USER, DB_PASSWORD);   
     }
 
     public function searchDatabases()

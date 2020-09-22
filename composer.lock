@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "59eb4be97f2227e9b7a89b16da25e524",
+    "hash": "ec1e0bc025ec34472202b8827cd74bec",
+    "content-hash": "ceea56a24b62d950d1a5d244c3cba6f4",
     "packages": [
         {
             "name": "components/jquery",
@@ -46,7 +47,82 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2018-03-04T13:23:48+00:00"
+            "time": "2018-03-04 13:23:48"
+        },
+        {
+            "name": "contao-components/ace",
+            "version": "1.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/ace.git",
+                "reference": "7bca126024c53ffe6c31475dc1686ccbac512082"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/ace/zipball/7bca126024c53ffe6c31475dc1686ccbac512082",
+                "reference": "7bca126024c53ffe6c31475dc1686ccbac512082",
+                "shasum": ""
+            },
+            "require": {
+                "contao-components/installer": "^1.0.9"
+            },
+            "type": "contao-component",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "ACE code editor integration for Contao Open Source CMS",
+            "time": "2020-07-27 09:02:53"
+        },
+        {
+            "name": "contao-components/installer",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/installer.git",
+                "reference": "c5df35d6f2263bc1a7e4dce6ff07eaf58ef49a90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/installer/zipball/c5df35d6f2263bc1a7e4dce6ff07eaf58ef49a90",
+                "reference": "c5df35d6f2263bc1a7e4dce6ff07eaf58ef49a90",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0 || ^2.0",
+                "phpunit/phpunit": "^5.7.26"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Contao\\ComponentsInstaller\\Composer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contao\\ComponentsInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao components installer",
+            "time": "2020-04-09 09:02:50"
         },
         {
             "name": "twbs/bootstrap",
@@ -97,7 +173,7 @@
                 "sass",
                 "web"
             ],
-            "time": "2019-02-13T16:01:40+00:00"
+            "time": "2019-02-13 16:01:40"
         }
     ],
     "packages-dev": [],

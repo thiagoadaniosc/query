@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Src\\' => array($baseDir . '/Src'),
+    'Contao\\ComponentsInstaller\\' => array($vendorDir . '/contao-components/installer/src'),
 );
